@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue JS</title>
+</head>
+<body>
+    <div id="monApp">
+        <h1>Vue JS</h1>
+        <p>{{txt}}</p>
+        <p>{{presentation()}}</p>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        // Création d'une instance
+        new Vue({
+            el: '#monApp',
+            data: {
+                txt: "Hello World"
+            },
+            methods: {
+                presentation: function() {
+                    return "Bonjour, je suis Ripley"
+                }
+            }
+        })
+
+    </script>
+</body>
+</html>
